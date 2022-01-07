@@ -7,7 +7,7 @@ def tradition2simple_directory(dir_path):
     for file in os.listdir(dir_path):
         filepath = os.path.join(dir_path, file)
         if os.path.isdir(filepath):
-            tradition2simple_directory(r'D:\Documents\Github2022\Learn-Git-in-30-days\zh-tw')
+            tradition2simple_directory(filepath)
         elif file.endswith('.md'):
             lines = []
             for line in open(filepath, 'r', encoding='utf8'):
